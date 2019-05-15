@@ -13,6 +13,8 @@
 		D2AC8013228BE15B00DDC9A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2AC8012228BE15B00DDC9A4 /* Assets.xcassets */; };
 		D2AC8016228BE15B00DDC9A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2AC8014228BE15B00DDC9A4 /* LaunchScreen.storyboard */; };
 		D2AC8019228BE15B00DDC9A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AC8018228BE15B00DDC9A4 /* main.m */; };
+		D2AC8023228BE16100DDC9A4 /* RadioPopupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AC8020228BE16100DDC9A4 /* RadioPopupVC.m */; };
+		D2AC8024228BE16100DDC9A4 /* Popup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2AC8021228BE16100DDC9A4 /* Popup.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		D2AC8015228BE15B00DDC9A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2AC8017228BE15B00DDC9A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2AC8018228BE15B00DDC9A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D2AC8020228BE16100DDC9A4 /* RadioPopupVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioPopupVC.m; sourceTree = "<group>"; };
+		D2AC8021228BE16100DDC9A4 /* Popup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Popup.storyboard; sourceTree = "<group>"; };
+		D2AC8022228BE16100DDC9A4 /* RadioPopupVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioPopupVC.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 		D2AC8008228BE15A00DDC9A4 /* RadioPopup */ = {
 			isa = PBXGroup;
 			children = (
+				D2AC801F228BE16100DDC9A4 /* Library */,
 				D2AC8009228BE15A00DDC9A4 /* AppDelegate.h */,
 				D2AC800A228BE15A00DDC9A4 /* AppDelegate.m */,
 				D2AC800C228BE15A00DDC9A4 /* ViewController.h */,
@@ -69,6 +75,16 @@
 				D2AC8018228BE15B00DDC9A4 /* main.m */,
 			);
 			path = RadioPopup;
+			sourceTree = "<group>";
+		};
+		D2AC801F228BE16100DDC9A4 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				D2AC8021228BE16100DDC9A4 /* Popup.storyboard */,
+				D2AC8020228BE16100DDC9A4 /* RadioPopupVC.m */,
+				D2AC8022228BE16100DDC9A4 /* RadioPopupVC.h */,
+			);
+			path = Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +147,7 @@
 				D2AC8016228BE15B00DDC9A4 /* LaunchScreen.storyboard in Resources */,
 				D2AC8013228BE15B00DDC9A4 /* Assets.xcassets in Resources */,
 				D2AC8011228BE15A00DDC9A4 /* Main.storyboard in Resources */,
+				D2AC8024228BE16100DDC9A4 /* Popup.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2AC800E228BE15A00DDC9A4 /* ViewController.m in Sources */,
+				D2AC8023228BE16100DDC9A4 /* RadioPopupVC.m in Sources */,
 				D2AC8019228BE15B00DDC9A4 /* main.m in Sources */,
 				D2AC800B228BE15A00DDC9A4 /* AppDelegate.m in Sources */,
 			);
@@ -288,6 +306,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6QG49X22JS;
 				INFOPLIST_FILE = RadioPopup/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +324,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6QG49X22JS;
 				INFOPLIST_FILE = RadioPopup/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
