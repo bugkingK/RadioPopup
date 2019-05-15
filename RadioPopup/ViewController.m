@@ -23,7 +23,11 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    RadioPopupVC *vc = [[RadioPopupVC alloc] initWithRadioDatas:@[@"항상 진동", @"진동 모드에서만", @"진동 끄기"] defaultRow:0 confirmEvent:^(NSInteger row) {
+//    RadioPopupVC *vc = [[RadioPopupVC alloc] initWithRadioDatas:@[@"항상 진동", @"진동 모드에서만", @"진동 끄기"] defaultRow:0 confirmEvent:^(NSInteger row) {
+//        NSLog(@"최종 row : %ld", (long)row);
+//    }];
+    
+    RadioPopupVC *vc = [[RadioPopupVC alloc] initWithRadioDatas:@[@"항상 진동", @"진동 모드에서만", @"진동 끄기"] defaultRow:0 titleName:@"진동모드" confirmEvent:^(NSInteger row) {
         NSLog(@"최종 row : %ld", (long)row);
     }];
     [self presentViewController:vc animated:YES completion:nil];
